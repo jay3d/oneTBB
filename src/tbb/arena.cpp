@@ -452,7 +452,7 @@ void task_arena_impl::initialize(d1::task_arena_base& ta) {
     ta.my_arena.store(a, std::memory_order_release);
     // add an internal market reference; a public reference was added in create_arena
     market::global_market( /*is_public=*/false);
-#if __TBB_ARENA_BINDING
+#if __TBB_CPUBIND_PRESENT
     a->my_numa_binding_observer = construct_binding_observer(
         static_cast<d1::task_arena*>(&ta), a->my_num_slots, ta.my_numa_id, ta.core_type(), ta.max_threads_per_core());
 #endif /*__TBB_ARENA_BINDING*/
