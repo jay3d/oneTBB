@@ -1,0 +1,75 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx-Book-Theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Download this page"
+msgstr "قم بتنزيل هذه الصفحة"
+
+msgid "Launch"
+msgstr "إطلاق"
+
+msgid "Download notebook file"
+msgstr "تنزيل ملف دفتر الملاحظات"
+
+msgid "Open an issue"
+msgstr "افتح قضية"
+
+msgid "Last updated on"
+msgstr "آخر تحديث في"
+
+msgid "Edit this page"
+msgstr "قم بتحرير هذه الصفحة"
+
+msgid "Sphinx Book Theme"
+msgstr "موضوع كتاب أبو الهول"
+
+msgid "Toggle navigation"
+msgstr "تبديل التنقل"
+
+msgid "Contents"
+msgstr "محتويات"
+
+msgid "Print to PDF"
+msgstr "طباعة إلى PDF"
+
+msgid "Download source file"
+msgstr "تنزيل ملف المصدر"
+
+msgid "Copyright"
+msgstr "حقوق النشر"
+
+msgid "Theme by the"
+msgstr "موضوع بواسطة"
+
+msgid "suggest edit"
+msgstr "أقترح تحرير"
+
+msgid "next page"
+msgstr "الصفحة التالية"
+
+msgid "Fullscreen mode"
+msgstr "وضع ملء الشاشة"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "Source repository"
+msgstr "مستودع المصدر"
+
+msgid "By the"
+msgstr "بواسطة"
+
+msgid "previous page"
+msgstr "الصفحة السابقة"
+
+msgid "open issue"
+msgstr "قضية مفتوحة"
+
+msgid "repository"
+msgstr "مخزن"
