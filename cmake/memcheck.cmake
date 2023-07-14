@@ -29,12 +29,12 @@ else()
     message(STATUS "Found Valgrind to run memory leak scan")
 endif()
 
-file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/memcheck)
+file(MAKE_DIRECTORY ${PROJECT_BINARY_DIR}/memcheck)
 
 function(_tbb_run_memcheck test_target)
     set(target_name memcheck-${test_target})
     add_custom_target(${target_name} 
-        COMMAND ${VALGRIND_EXE} --leak-check=full --show-leak-kinds=all --log-file=${CMAKE_BINARY_DIR}/memcheck/${target_name}.log -v $<TARGET_FILE:${test_target}>)
+        COMMAND ${VALGRIND_EXE} --leak-check=full --show-leak-kinds=all --log-file=${PROJECT_BINARY_DIR}/memcheck/${target_name}.log -v $<TARGET_FILE:${test_target}>)
     add_dependencies(memcheck-all ${target_name})
 endfunction()
 

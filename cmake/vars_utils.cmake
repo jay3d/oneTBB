@@ -29,7 +29,7 @@ macro(tbb_gen_vars target)
     if (${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})
         add_custom_command(TARGET ${target} POST_BUILD COMMAND
             ${CMAKE_COMMAND}
-            -DBINARY_DIR=${CMAKE_BINARY_DIR}
+            -DBINARY_DIR=${PROJECT_BINARY_DIR}
             -DSOURCE_DIR=${PROJECT_SOURCE_DIR}
             -DBIN_PATH=$<TARGET_FILE_DIR:${target}>
             -DVARS_TEMPLATE=${TBB_VARS_TEMPLATE}
@@ -42,7 +42,7 @@ macro(tbb_gen_vars target)
 endmacro(tbb_gen_vars)
 
 if (TBB_INSTALL_VARS)
-    install(PROGRAMS "${CMAKE_BINARY_DIR}/internal_install_vars"
+    install(PROGRAMS "${PROJECT_BINARY_DIR}/internal_install_vars"
             DESTINATION env
             RENAME ${TBB_VARS_NAME})
 endif()
